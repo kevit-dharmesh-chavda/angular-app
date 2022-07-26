@@ -1,1 +1,3 @@
-<app-header></app-header>
+<app-header ></app-header>
+<app-taskdisplay *ngFor="let task of inputdata" [printInputData] = 'task' ></app-taskdisplay>
+<app-input (addInputTask) = "addedInputTask($event)"></app-input>

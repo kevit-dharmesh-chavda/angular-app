@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'task-1';
+  inputdata = [];
+  addedInputTask(inputdatafrom:string){
+    // console.log()
+       this.inputdata.push(inputdatafrom);
+      // console.log(inputdatafrom);
+  }
+
 }
