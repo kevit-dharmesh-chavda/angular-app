@@ -1,0 +1,29 @@
+.container{
+     max-height: 30vh;
+     overflow-y: scroll;
+}
+.container::-webkit-scrollbar{
+    width: 20px;
+}
+.container::-webkit-scrollbar-thumb{
+    background-color: gray;
+}
+.hiddenShow{
+    visibility: hidden;
+}
+span:nth-child(2),span:nth-child(3){
+         display: none; 
+         cursor: pointer;
+         margin: 0px 10px;
+}
+div:hover span:nth-child(2),div:hover span:nth-child(3){
+    display:inline-block;
+    
+}
+input{
+     border: none;
+}
+input:focus{
+    border: none;
+    outline: none;
+}

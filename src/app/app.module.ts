@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { InputComponent } from './input/input.component';
 import { TaskdisplayComponent } from './taskdisplay/taskdisplay.component';
+import { TaskContainService } from'./shred-folder/task-contain.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,9 +18,10 @@ import { TaskdisplayComponent } from './taskdisplay/taskdisplay.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [TaskContainService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
