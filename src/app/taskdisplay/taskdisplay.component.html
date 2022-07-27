@@ -1,13 +1,10 @@
 <div class="container">
 <div *ngFor = "let data of inputdata ; let index = index" >
     <li class="list-group-item">
-
-        <!-- <span[ngModel]=inputdata[index]></span> -->
-        <input type="text" [ngModel]=inputdata[index] placeholder="Add Task">
-        <span class="pull-right glyphicon glyphicon-pencil" (click)="edit(index)"></span>
-        <span class="pull-right glyphicon glyphicon-trash" (click)="delete(index)"></span>
-        
-        <hr>
+        <input type="text" class="form-control glyphicon glyphicon-pencil" [ngModel]=inputdata[index] placeholder="Add Task" >
+        <span class="pull-right glyphicon glyphicon-pencil" (click)="edit(index)" ></span>
+        <span class="pull-right glyphicon glyphicon-trash" (click)="delete(index)" ></span>
+    
     </li>
 </div>
 </div>
