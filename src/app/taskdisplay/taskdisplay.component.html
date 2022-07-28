@@ -1,10 +1,9 @@
 <div class="container">
-<div *ngFor = "let data of inputdata ; let index = index" >
-    <li class="list-group-item">
-        <input type="text" class="form-control glyphicon glyphicon-pencil" [ngModel]=inputdata[index] placeholder="Add Task" >
-        <span class="pull-right glyphicon glyphicon-pencil" (click)="edit(index)" ></span>
-        <span class="pull-right glyphicon glyphicon-trash" (click)="delete(index)" ></span>
-    
+<div *ngFor = "let data of inputdata ; let index = index" (mouseenter)= 'over(litask1,litask2)' (mouseleave) = "out(litask1,litask2)">
+    <li class="list-group-item" >
+        <input type="text" class="form-control" [ngModel]=inputdata[index] placeholder="Add Task" #inputtask>        
+        <span class="pull-right glyphicon glyphicon-pencil"  (click)="edit(inputtask)" #litask1 ></span>
+        <span class="pull-right glyphicon glyphicon-trash" (click)="delete(index)" #litask2></span>    
     </li>
 </div>
 </div>

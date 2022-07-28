@@ -1,33 +1,43 @@
 .container{
     
-     /* max-height: 30vh; */
-     /* overflow-y: scroll; */
+     max-height: 70vh; 
+     overflow-y: scroll;
 }
 .container::-webkit-scrollbar{
-    /* width: 20px; */
+     width: 5px;
+     border-radius: 20px;
 }
 .container::-webkit-scrollbar-thumb{
-    /* background-color: gray; */
+     background-color: gray; 
 }
-.hiddenShow{
-    visibility: hidden;
+
+.glyphicon-pencil{
+    display: none;
+    color: blue;
+    cursor: pointer;
+    margin: 0px 10px;
+
 }
-span:nth-child(2),span:nth-child(3){
+.glyphicon-trash{
          display: none; 
+         color: red;
          cursor: pointer;
          margin: 0px 10px;
 }
-div:hover span:nth-child(2),div:hover span:nth-child(3){
+.hiddenShow{
     display:inline-block;
-    
-}
+   }
+
 li{
     display: flex;
     align-items: center;
+    box-shadow: 1px 1px 10px -3px grey;
+    margin: 7px 0px;
 }
 input{
      border: none;
-    
+     outline: none;
+     box-shadow: none;
 }
 
 .form-control:focus{
